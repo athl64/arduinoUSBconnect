@@ -39,6 +39,7 @@ bool MainWindow::dataPartExtract(QByteArray dataIn)
     QString str = QString(dataIn.left(5));
     temp = str.toDouble();
     ui->lcdNumber->display(QString::number(temp,'f',2));
+    //
 
     return 0;
 }
